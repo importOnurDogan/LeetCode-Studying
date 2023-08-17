@@ -14,11 +14,12 @@ class Solution:
         for i in nums:
             for j in nums:
                 if i + j == target:
+                    Numbers = []
                     a = nums.count(i)
-                    List.append(a)
+                    Numbers.append(a)
                     b = nums.count(j)
-                    List.append(b)
-                    print(List)
+                    Numbers.append(b)
+                    return (Numbers[])
                 else:
                     continue
 
