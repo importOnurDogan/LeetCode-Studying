@@ -19,7 +19,7 @@ class Solution:
                     Numbers.append(a)
                     b = nums.count(j)
                     Numbers.append(b)
-                    return (Numbers[])
+                    return (Numbers)
                 else:
                     continue
 
