@@ -8,19 +8,16 @@ Output: [0,1] \
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]."
 
 
+from typing import List
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
 
         for i in nums:
             for j in nums:
                 if i + j == target:
-                    Numbers = []
-                    a = nums.count(i)
-                    Numbers.append(a)
-                    b = nums.count(j)
-                    Numbers.append(b)
-                    return (Numbers)
+                    numbers = []
+                    numbers.append(nums.count(i))
+                    numbers.append(nums.count(j))
+                    return(numbers)
                 else:
                     continue
-
-
