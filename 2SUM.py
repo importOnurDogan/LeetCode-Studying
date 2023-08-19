@@ -12,9 +12,21 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+
+#   WRONG
+
         for i in nums:
             for j in nums:
                 if nums.index(i) != nums.index(j) and i + j == target:
                     return [nums.index(i), nums.index(j)]
                 else:
                     continue
+
+#   CORRECT
+
+        a = 1
+        for i in range(len(nums)):
+            for j in range(a,len(nums)):
+                if nums[i]+nums[j] == target:
+                    return [i,j]
+            a += 1
